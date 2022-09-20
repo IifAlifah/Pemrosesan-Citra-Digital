@@ -24,6 +24,12 @@ Dalam sebuah gambar terdapat 3 layer didalamnya yaitu layer red, green dan blue.
 
 <p align="center"><img src="img/fig4.PNG"></p>
 
+Perintah yang digunakan untuk merepresentasikan RGB nya yaitu:
+<p align="center"><img src="img/code.PNG"></p>
+
+* Menggunakan figure() untuk menambahkan gambar berbeda figure  
+* Menggunakan subplot untuk mengatur posisi gambarnya.
+
 
 2. Menggunakan fungsi (1) imread, (2) imshow (3) dan imhist.
 
