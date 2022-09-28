@@ -67,6 +67,24 @@ Implementasi Halftoning Analog sering dijumpai pada mesin cetak dengan format pe
 
 * **Dithering**
 
+<p align="justify">
+Teknik lain yang digunakan untuk menghasilkan gambar halftoning digital adalah dithering. Tidak seperti pola, dithering membuat gambar keluaran dengan jumlah titik yang sama dengan jumlah piksel pada gambar sumber. Dithering dapat dianggap sebagai thresholding gambar sumber dengan matriks gentar. Matriks diletakkan berulang kali di atas gambar sumber. Dimanapun nilai piksel gambar lebih besar dari nilai dalam matriks, titik pada gambar output diisi. Masalah dithering yang terkenal adalah menghasilkan artefak pola yang diperkenalkan oleh matriks ambang batas tetap. Gambar dibawah
+ini menunjukkan contoh operasi dithering.</p>
+
+<p align="center"><img src="img/dither.PNG">
+
+---
+
+
+* **Patterning**
+
+<p align="justify">
+Patterning adalah yang paling sederhana dari beberapa teknik untuk menghasilkan gambar halftoning digital. Teknik ini menghasilkan gambar yang memiliki resolusi spasial lebih tinggi daripada gambar sumber. Jumlah sel halftone citra keluaran sama dengan jumlah piksel citra sumber. Namun, setiap sel halftone dibagi lagi menjadi kotak 4x4. Setiap nilai piksel input diwakili oleh jumlah kotak terisi yang berbeda dalam sel halftone. Karena kisi 4x4 hanya dapat mewakili 17 tingkat intensitas yang berbeda, gambar sumber harus dikuantisasi. Gambar dibawah ini menunjukkan matriks pola rekursif Rylander.</p>
+
+<p align="center"><img src="img/pattern.PNG">
+
+<p align="justify">
+pattern menghasilkan gambar halftoning digital dari gambar input menggunakan teknik pola. Pola program membaca gambar input, mengkuantisasi nilai piksel, dan memetakan setiap piksel ke pola yang sesuai.</p>
 
 
 
