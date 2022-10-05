@@ -99,8 +99,18 @@ Untuk menentukan pola pada dithering
 
 
 
-
 2. **Cara menentukan matriks threshold pada dithering**
+<p align="justify">
+Ordered Dithering merupakan salah satu metode dalam halftoning digital. Ordered Dithering dilakukan dengan membandingkan tiap blok dari citra asli dengan sebuah matriks pembatas (matriks threshold) yang disebut dengan matriks dither. Masing-masing elemen dari blok asli dikuantisasi sesuai dengan nilai batas pada pola dither. Nilai-nilai pada matriks dither adalah tetap, tetapi bisa bervariasi sesuai dengan jenis citra. Matriks dither yang digunakan berukuran
+4 x 4 dan 8 x 8. </p>
+
+<p align="center"><img src ="img/thres.PNG">
+
+Keterangan:
+T(i,j) = Matriks threshold
+I(i,j) = Matriks pembatas/ dither
+N<sup>2</sup> = Jumlah element pada matriks
+
 
 
 3. **Mengapa pola dittering yang kecil (2x2) tidak sebagus yang lebih besar (16x16)**
