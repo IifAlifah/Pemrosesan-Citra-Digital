@@ -86,6 +86,25 @@ Patterning adalah yang paling sederhana dari beberapa teknik untuk menghasilkan 
 <p align="justify">
 pattern menghasilkan gambar halftoning digital dari gambar input menggunakan teknik pola. Pola program membaca gambar input, mengkuantisasi nilai piksel, dan memetakan setiap piksel ke pola yang sesuai.</p>
 
+---
+
+1. **Cara menentukan pola pada patterning dan dithering**
+
+* Pada Patterning
+<p align="justify">
+Untuk menentukan pola pada patterning dapat dilakukan dengan melakukan perhitungan jumlah font biner lalu ditambah 1. Dan untuk pola yang di hasilkan nanti akan berbeda antara satu dengan yang lainnya. 
+
+* Pada Dithering
+Untuk menentukan pola pada dithering 
+
+
+
+
+2. **Cara menentukan matriks threshold pada dithering**
+
+
+3. **Mengapa pola dittering yang kecil (2x2) tidak sebagus yang lebih besar (16x16)**
+
 
 
 
