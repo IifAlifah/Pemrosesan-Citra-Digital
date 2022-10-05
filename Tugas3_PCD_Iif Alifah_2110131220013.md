@@ -96,14 +96,24 @@ Untuk menentukan pola pada patterning dapat dilakukan dengan melakukan perhitung
 
 
 * Pada Dithering
-Untuk menentukan pola pada dithering 
+<p align="justify">
+Karena sistem visual manusia cenderung meratakan suatu area di sekitar piksel,
+bukan melihat setiap piksel secara sendiri-sendiri, sehingga memungkinkan untuk
+membuat ilusi dari beberapa tingkat keabuan di dalam sebuah citra biner yang dalam
+kenyataanya hanya terdiri dari dua tingkat abu-abu. 
+
+<p align="justify">
+Untuk menghasilkan pola pada dithering dilakukan dengan membandingkan tiap blok dari citra asli
+dengan sebuah matriks pembatas yang disebut dengan matriks dither. Masing-masing elemen dari blok asli dikuantisasi sesuai dengan nilai batas pada pola dither. Jika nilai nya lebih besar dari batas maka menjadi hitam, dan jika nilai nya lebih kecil dari batas maka warnanya menjadi putih.
+
+<p align="center"><img src="img/dither.PNG">
 
 
 
 2. **Cara menentukan matriks threshold pada dithering**
 <p align="justify">
 Thresholding merupakan salah satu metode segmentasi citra dalam suatu citra berdasarkan pada perbedaan tingkat kecerahan atau gelap terang . Dalam proses ini dibutuhkan suatu nilai batas yang disebut nilai threshold. Keluaran dari proses segmentasi dengan metode thresholding adalah berupa citra biner dengan nilai intensitas piksel sebesar 0 atau 1. Warna hitam yang dinyatakan oleh nilai 0 dan warna putih yang dinyatakan oleh nilai 1.
-Jika nilai intensitasnya lebih dari nilai thershold maka akan di rubah menjadi hitam, dan jika nilai intensitasnya kurang dari nilai thershold maka akan dirubah menjadi warna putih.
+Jika nilai intensitasnya lebih dari nilai threshold maka akan di rubah menjadi hitam, dan jika nilai intensitasnya kurang dari nilai threshold maka akan dirubah menjadi warna putih.
 
 
 
