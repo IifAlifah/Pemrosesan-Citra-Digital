@@ -94,6 +94,7 @@ pattern menghasilkan gambar halftoning digital dari gambar input menggunakan tek
 <p align="justify">
 Untuk menentukan pola pada patterning dapat dilakukan dengan melakukan perhitungan jumlah font biner lalu ditambah 1. Dan untuk pola yang di hasilkan nanti akan berbeda antara satu dengan yang lainnya. 
 
+
 * Pada Dithering
 Untuk menentukan pola pada dithering 
 
@@ -101,19 +102,17 @@ Untuk menentukan pola pada dithering
 
 2. **Cara menentukan matriks threshold pada dithering**
 <p align="justify">
-Ordered Dithering merupakan salah satu metode dalam halftoning digital. Ordered Dithering dilakukan dengan membandingkan tiap blok dari citra asli dengan sebuah matriks pembatas (matriks threshold) yang disebut dengan matriks dither. Masing-masing elemen dari blok asli dikuantisasi sesuai dengan nilai batas pada pola dither. Nilai-nilai pada matriks dither adalah tetap, tetapi bisa bervariasi sesuai dengan jenis citra. Matriks dither yang digunakan berukuran
-4 x 4 dan 8 x 8. </p>
-
-<p align="center"><img src ="img/thres.PNG">
-
-Keterangan:
-T(i,j) = Matriks threshold
-I(i,j) = Matriks pembatas/ dither
-N<sup>2</sup> = Jumlah element pada matriks
+Thresholding merupakan salah satu metode segmentasi citra dalam suatu citra berdasarkan pada perbedaan tingkat kecerahan atau gelap terang . Dalam proses ini dibutuhkan suatu nilai batas yang disebut nilai threshold. Keluaran dari proses segmentasi dengan metode thresholding adalah berupa citra biner dengan nilai intensitas piksel sebesar 0 atau 1. Warna hitam yang dinyatakan oleh nilai 0 dan warna putih yang dinyatakan oleh nilai 1.
+Jika nilai intensitasnya lebih dari nilai thershold maka akan di rubah menjadi hitam, dan jika nilai intensitasnya kurang dari nilai thershold maka akan dirubah menjadi warna putih.
 
 
 
-3. **Mengapa pola dittering yang kecil (2x2) tidak sebagus yang lebih besar (16x16)**
+3. **Mengapa pola dittering yang kecil (4x4) tidak sebagus yang lebih besar (16x16)**
+
+<p align="justify">
+Karena dari gambar atau keluaran yang akan dihasilkan dari pola-pola matriks tersebut akan terlihat perbedaan antara matriks 4x4 dengan matriks 16x16. Perbedaan yang dihasilkan terletak pada sensitifitas nilai pixel aslinya. Citra yang menggunakan matriks 4 x 4 memiliki pola yang kurang dibandingkan dengan citra yang diproses menggunakan matriks 16 x 16. Karena itu hasil dari citra dengan 4 x 4 memiliki banyak daerah pola yang sama.
+
+
 
 
 
